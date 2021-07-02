@@ -1,0 +1,1157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.close-menu {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* MENU STYLES: */
+  .menu h1 {
+    font-size: 2.3rem;
+  }
+  .menu h1 a {
+    color: inherit;
+  }
+  .menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: black;
+    position: relative;
+  }
+  .menu-spacing {
+    display: none;
+  }
+  .menu {
+    bottom: 0;
+    text-align: center;
+  }
+  .menu-container {
+    height: 100vh;
+  }
+  .menu {
+    display: none;
+  }
+  .close-menu {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+  .close-menu-label::after {
+    content: "≡";
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    background: black;
+    color: white;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .close-menu:checked ~ .menu {
+    display: block;
+  }
+  .close-menu:checked ~ .close-menu-label::after {
+    content: "×";
+  }
+  .menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: black;
+    position: relative;
+  }
+  .menu ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: black;
+    transition: all 300ms ease-in-out;
+  }
+  .menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+  }
+  /* FIRST SECTION: ---------------------------------------------------->*/
+  .sec1_background {
+    background-image: url("../img/bg_.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 1000px;
+    color: white;
+    position: relative;
+  }
+  .two-side-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    height: 100vh;
+  }
+  .left-column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+  .left-column h2 {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    font-size: 4.5rem;
+  }
+  .right-column,
+  .left-column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .ref1 {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 0;
+  }
+  .ref1 p a {
+    color: white;
+    text-decoration: white underline;
+  }
+  /* SECOND SECTION: ------------------------------------------------>*/
+  .sec2_background {
+    height: 1950px;
+  }
+  .two-side-grid2 {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .left-column2 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .left-column2 h2 {
+    margin-bottom: 3rem;
+  }
+  .right-column2,
+  .left-column2 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .right-column2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .two-side-grid3 {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .right-column3 {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 5rem;
+  }
+  .right-column3 h2 {
+    margin-bottom: 3rem;
+  }
+  .right-column3,
+  .left-column3 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .left-column3 img {
+    padding-top: 10rem;
+    border-top: solid 1px black;
+    max-width: 100%;
+    height: auto;
+  }
+  /* THIRD SECTION: ------------------------------------------------>*/
+  .sec3-background {
+    height: 2070px;
+    background-image: url("../img/bg2_.jpg");
+    color: white;
+    position: relative;
+  }
+  .sec3-title {
+    padding-top: 3rem;
+    text-align: center;
+  }
+  .sec3-title h2 {
+    padding-bottom: 2rem;
+  }
+  .card-container1 {
+    padding-top: 15vh;
+    gap: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card1 {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.5rem;
+  }
+  .card1 h7 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    text-decoration: underline overline;
+  }
+  .card1 p {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .card1 p a {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: underline;
+  }
+  .card1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  .ref3 {
+    position: absolute;
+    color: white;
+    bottom: 0;
+  }
+  .ref3 p a {
+    color: white;
+    text-decoration: underline;
+  }
+  /* FOURTH SECTION: ------------------------------------------------>*/
+  .sec4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80rem;
+  }
+  .contact-form-container {
+    background-image: url(../img/bg3_.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 65rem;
+    border-radius: 1rem;
+    position: relative;
+  }
+  .form {
+    padding: 5rem;
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .form-input label {
+    display: block;
+    margin-top: 0.2rem;
+  }
+  .form-input input {
+    padding: 0.5rem;
+    width: 50%;
+  }
+  .form-input textarea {
+    margin: 1.5rem;
+    width: 50%;
+  }
+  .bttn button {
+    width: 10rem;
+    height: 3rem;
+  }
+  .ref4 {
+    bottom: 0;
+    position: absolute;
+    color: white;
+  }
+  .ref4 a {
+    text-decoration: underline;
+    color: black;
+  }
+  /* FOOTER: ------------------------------------------------>*/
+  footer {
+    height: 18rem;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+  }
+  footer div h6 {
+    font-size: 4rem;
+  }
+  footer div a {
+    color: white;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+  /* MENU STYLES: */
+  .menu {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .menu h1 {
+    font-size: 2.3rem;
+  }
+  .menu h1 a {
+    color: inherit;
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+  }
+  .menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: black;
+    position: relative;
+  }
+  .menu ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: black;
+    transition: all 300ms ease-in-out;
+  }
+  .menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+  }
+  /* FIRST SECTION: ---------------------------------------------------->*/
+  .sec1_background {
+    background-image: url("../img/bg_.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 1070px;
+    color: white;
+    position: relative;
+  }
+  .two-side-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    height: 100vh;
+  }
+  .left-column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+  .left-column h2 {
+    margin-bottom: 3rem;
+    font-size: 4.5rem;
+  }
+  .right-column,
+  .left-column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .ref1 {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 0;
+  }
+  .ref1 p a {
+    color: white;
+    text-decoration: white underline;
+  }
+  /* SECOND SECTION: ------------------------------------------------>*/
+  .sec2_background {
+    height: 1950px;
+  }
+  .two-side-grid2 {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .left-column2 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .left-column2 h2 {
+    margin-bottom: 3rem;
+  }
+  .right-column2,
+  .left-column2 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .right-column2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .two-side-grid3 {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .right-column3 {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 5rem;
+  }
+  .right-column3 h2 {
+    margin-bottom: 3rem;
+  }
+  .right-column3,
+  .left-column3 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .left-column3 img {
+    padding-top: 10rem;
+    border-top: solid 1px black;
+    max-width: 100%;
+    height: auto;
+  }
+  /* THIRD SECTION: ------------------------------------------------>*/
+  .sec3-background {
+    height: 1070px;
+    background-image: url("../img/bg2_.jpg");
+    color: white;
+    position: relative;
+  }
+  .sec3-title {
+    padding-top: 3rem;
+    text-align: center;
+  }
+  .sec3-title h2 {
+    padding-bottom: 2rem;
+  }
+  .card-container1 {
+    padding-top: 15vh;
+    gap: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card1 {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.5rem;
+  }
+  .card1 h7 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    text-decoration: underline overline;
+  }
+  .card1 p {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .card1 p a {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: underline;
+  }
+  .card1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  .ref3 {
+    position: absolute;
+    color: white;
+    bottom: 0;
+  }
+  .ref3 p a {
+    color: white;
+    text-decoration: underline;
+  }
+  /* FOURTH SECTION: ------------------------------------------------>*/
+  .sec4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80rem;
+  }
+  .contact-form-container {
+    background-image: url(../img/bg3_.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 55rem;
+    height: 60rem;
+    border-radius: 1rem;
+    position: relative;
+  }
+  .form {
+    padding: 5rem;
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .form-input label {
+    display: block;
+    margin-top: 0.2rem;
+  }
+  .form-input input {
+    padding: 0.5rem;
+    width: 50%;
+  }
+  .form-input textarea {
+    margin: 1.5rem;
+    width: 50%;
+  }
+  .bttn button {
+    width: 10rem;
+    height: 3rem;
+  }
+  .ref4 {
+    bottom: 0;
+    position: absolute;
+    color: white;
+  }
+  .ref4 a {
+    text-decoration: underline;
+    color: black;
+  }
+  /* FOOTER: ------------------------------------------------>*/
+  footer {
+    height: 10rem;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+  }
+  footer div h6 {
+    font-size: 4rem;
+  }
+  footer div a {
+    color: white;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1223px) {
+  /* MENU STYLES: */
+  .menu {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .menu h1 {
+    font-size: 2.3rem;
+  }
+  .menu h1 a {
+    color: inherit;
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+  }
+  .menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: black;
+    position: relative;
+  }
+  .menu ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: black;
+    transition: all 300ms ease-in-out;
+  }
+  .menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+  }
+  /* FIRST SECTION: ---------------------------------------------------->*/
+  .sec1_background {
+    background-image: url("../img/bg_.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 1070px;
+    color: white;
+    position: relative;
+  }
+  .two-side-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    height: 100vh;
+  }
+  .left-column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+  .left-column h2 {
+    margin-bottom: 3rem;
+    font-size: 4.5rem;
+  }
+  .right-column,
+  .left-column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .ref1 {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 0;
+  }
+  .ref1 p a {
+    color: white;
+    text-decoration: white underline;
+  }
+  /* SECOND SECTION: ------------------------------------------------>*/
+  .sec2_background {
+    height: 1070px;
+  }
+  .two-side-grid2 {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .left-column2 {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 5rem;
+  }
+  .left-column2 h2 {
+    margin-bottom: 3rem;
+  }
+  .right-column2,
+  .left-column2 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .right-column2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .two-side-grid3 {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .right-column3 {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 5rem;
+  }
+  .right-column3 h2 {
+    margin-bottom: 3rem;
+  }
+  .right-column3,
+  .left-column3 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .left-column3 img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* THIRD SECTION: ------------------------------------------------>*/
+  .sec3-background {
+    height: 1070px;
+    background-image: url("../img/bg2_.jpg");
+    color: white;
+    position: relative;
+  }
+  .sec3-title {
+    padding-top: 3rem;
+    text-align: center;
+  }
+  .sec3-title h2 {
+    padding-bottom: 2rem;
+  }
+  .card-container1 {
+    padding-top: 15vh;
+    gap: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card1 {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.5rem;
+  }
+  .card1 h7 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    text-decoration: underline overline;
+  }
+  .card1 p {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .card1 p a {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: underline;
+  }
+  .card1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  .ref3 {
+    position: absolute;
+    color: white;
+    bottom: 0;
+  }
+  .ref3 p a {
+    color: white;
+    text-decoration: underline;
+  }
+  /* FOURTH SECTION: ------------------------------------------------>*/
+  .sec4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80rem;
+  }
+  .contact-form-container {
+    background-image: url(../img/bg3_.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70rem;
+    height: 60rem;
+    border-radius: 1rem;
+    position: relative;
+  }
+  .form {
+    padding: 5rem;
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .form-input label {
+    display: block;
+    margin-top: 0.2rem;
+  }
+  .form-input input {
+    padding: 0.5rem;
+    width: 50%;
+  }
+  .form-input textarea {
+    margin: 1.5rem;
+    width: 50%;
+  }
+  .bttn button {
+    width: 10rem;
+    height: 3rem;
+  }
+  .ref4 {
+    bottom: 0;
+    position: absolute;
+    color: white;
+  }
+  .ref4 a {
+    text-decoration: underline;
+    color: black;
+  }
+  /* FOOTER: ------------------------------------------------>*/
+  footer {
+    height: 10rem;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+  }
+  footer div h6 {
+    font-size: 4rem;
+  }
+  footer div a {
+    color: white;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  /* MENU STYLES: */
+  .menu {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .menu h1 {
+    font-size: 2.3rem;
+  }
+  .menu h1 a {
+    color: inherit;
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+  }
+  .menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: black;
+    position: relative;
+  }
+  .menu ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: black;
+    transition: all 300ms ease-in-out;
+  }
+  .menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+  }
+  /* FIRST SECTION: ---------------------------------------------------->*/
+  .sec1_background {
+    background-image: url("../img/bg_.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 1070px;
+    color: white;
+    position: relative;
+  }
+  .two-side-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    height: 100vh;
+  }
+  .left-column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+  .left-column h2 {
+    margin-bottom: 3rem;
+    font-size: 4.5rem;
+  }
+  .right-column,
+  .left-column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .ref1 {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 0;
+  }
+  .ref1 p a {
+    color: white;
+    text-decoration: white underline;
+  }
+  /* SECOND SECTION: ------------------------------------------------>*/
+  .sec2_background {
+    height: 1070px;
+  }
+  .two-side-grid2 {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .left-column2 {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 5rem;
+  }
+  .left-column2 h2 {
+    margin-bottom: 3rem;
+  }
+  .right-column2,
+  .left-column2 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .right-column2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .two-side-grid3 {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .right-column3 {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 5rem;
+  }
+  .right-column3 h2 {
+    margin-bottom: 3rem;
+  }
+  .right-column3,
+  .left-column3 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .left-column3 img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* THIRD SECTION: ------------------------------------------------>*/
+  .sec3-background {
+    height: 1070px;
+    background-image: url("../img/bg2_.jpg");
+    color: white;
+    position: relative;
+  }
+  .sec3-title {
+    padding-top: 3rem;
+    text-align: center;
+  }
+  .sec3-title h2 {
+    padding-bottom: 2rem;
+  }
+  .card-container1 {
+    padding-top: 15vh;
+    gap: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card1 {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.5rem;
+  }
+  .card1 h7 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    text-decoration: underline overline;
+  }
+  .card1 p {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .card1 p a {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: underline;
+  }
+  .card1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  .ref3 {
+    position: absolute;
+    color: white;
+    bottom: 0;
+  }
+  .ref3 p a {
+    color: white;
+    text-decoration: underline;
+  }
+  /* FOURTH SECTION: ------------------------------------------------>*/
+  .sec4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80rem;
+  }
+  .contact-form-container {
+    background-image: url(../img/bg3_.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 110rem;
+    height: 80rem;
+    border-radius: 1rem;
+    position: relative;
+  }
+  .form {
+    padding: 5rem;
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .form-input label {
+    display: block;
+    margin-top: 0.2rem;
+  }
+  .form-input input {
+    padding: 0.5rem;
+    width: 50%;
+  }
+  .form-input textarea {
+    margin: 1.5rem;
+    width: 50%;
+  }
+  .bttn button {
+    width: 10rem;
+    height: 3rem;
+  }
+  .ref4 {
+    bottom: 0;
+    position: absolute;
+    color: white;
+  }
+  .ref4 a {
+    text-decoration: underline;
+    color: black;
+  }
+  /* FOOTER: ------------------------------------------------>*/
+  footer {
+    height: 10rem;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+  }
+  footer div h6 {
+    font-size: 4rem;
+  }
+  footer div a {
+    color: white;
+    padding: 1rem;
+  }
+}
